@@ -41,7 +41,7 @@ function cityname(b)
                         document.body.style.backgroundImage = "url('images/clouds.jpg')"
             } 
             if(response.weather[0].main=="Haze"){
-                document.body.style.backgroundImage = "url('images/haze1.jpg')"
+                document.body.style.backgroundImage = "url('images/haze.jpg')"
     } 
     if(response.weather[0].main=="Clear"){
         document.body.style.backgroundImage = "url('images/clear.jpg')"
