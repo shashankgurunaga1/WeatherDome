@@ -37,7 +37,30 @@ function cityname(b)
                     console.log(response.name);
                     console.log(response.main.temp);
                     console.log(response.weather[0].description)
-                    
+                    if(response.weather[0].main=="Clouds"){
+                        document.body.style.backgroundImage = "url('images/clouds.jpg')"
+            } 
+            if(response.weather[0].main=="Haze"){
+                document.body.style.backgroundImage = "url('images/haze.jpg')"
+    } 
+    if(response.weather[0].main=="Clear"){
+        document.body.style.backgroundImage = "url('images/clear.jpg')"
+} 
+if(response.weather[0].main=="Rain"){
+    document.body.style.backgroundImage = "url('images/rain.jpeg')"
+} 
+if(response.weather[0].main=="Smoke"){
+    document.body.style.backgroundImage = "url('images/smoke.jpg')"
+} 
+if(response.weather[0].main=="Mist"){
+    document.body.style.backgroundImage = "url('images/mist.jpg')"
+}
+if(response.weather[0].main=="Fog"){
+    document.body.style.backgroundImage = "url('images/fog.jpg')"
+}
+
+
+
                     display_string = display_string.concat('<br><div class="container"> <div class="card"><div class="card-body"><b>City Name:</b> ').concat(response.name).concat('<br/><b>Temp:</b>').concat(response.main.temp).concat('<br/><b>Description:</b>').concat(response.weather[0].description).concat('</div></div>,</div></br>');
                     console.log(display_string);
                     document.getElementById("temp1").innerHTML=display_string;
