@@ -1,6 +1,6 @@
 body{
 
-  
+  background-image:url('images/cloud.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,10 +8,10 @@ body{
  
 }
 
+
 #content-wrap button{
   border: 3px solid black;
 }
-
 #head{
     height: 60px;
     align-items: center;
@@ -31,6 +31,7 @@ body{
 
 #page-container {
     position: relative;
+    align-items: center;
     min-height: 100vh;
     justify-content: center;
     text-align:center;
@@ -51,4 +52,13 @@ body{
     height: 2.5rem;  
     justify-content: center;  
     background-color: yellow;        /* Footer height */
+  }
+
+  #preloader{
+        position:fixed;
+        background:rgb(255,204,0)url('images/loader.gif') no-repeat center;
+        background-size: 240px;
+        height:100vh;
+        width: 100%;
+        z-index: 100;
   }
