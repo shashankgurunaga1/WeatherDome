@@ -61,7 +61,7 @@ if(response.weather[0].main=="Fog"){
 
 
 
-                    display_string = display_string.concat('<br><div class="container"> <div class="card"><div class="card-body"><b>City Name:</b> ').concat(response.name).concat('<br/><b>Temp:</b>').concat(response.main.temp).concat('<br/><b>Description:</b>').concat(response.weather[0].description).concat('</div></div>,</div></br>');
+                    display_string = display_string.concat('<br><div class="container"> <div class="card"><div class="card-body"><b>City Name: </b> ').concat(response.name).concat('<br/><b>Temp: </b>').concat(response.main.temp).concat('<br/><b>Description: </b>').concat(response.weather[0].description).concat('</div></div>,</div></br>');
                     console.log(display_string);
                     document.getElementById("temp1").innerHTML=display_string;
 
