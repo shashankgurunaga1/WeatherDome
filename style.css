@@ -8,7 +8,9 @@ body{
  
 }
 
-
+#content-wrap button{
+  border: 3px solid black;
+}
 
 #head{
     height: 60px;
