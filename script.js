@@ -27,7 +27,7 @@ function cityname(b)
                 }
 
                 else if (response.cod==404){
-                    display_string = display_string.concat('<br><div class="container" style="display: flex;align-items: center;flex-direction: column;"> <div class="card" style="width: 370px;height: 200px;display: flex; margin: 30px 30px;border: 6px solid black;padding: 40px 40px;border-radius: 20px;"><div class="card-body" ><b><p><font color="#FFFF00">City not found </font></p></b> </div></div></div></br>');
+                    display_string = display_string.concat('<br><div class="container" style="display: flex;align-items: center;flex-direction: column;"> <div class="card" style="width: 430px;height: 220px;display: flex; margin: 30px 30px;border: 6px solid black;padding: 40px 40px;border-radius: 20px;"><div class="card-body" ><b><p><font color="#FFFF00">City not found </font></p></b> </div></div></div></br>');
                     document.getElementById("temp1").innerHTML=display_string;
 
 
