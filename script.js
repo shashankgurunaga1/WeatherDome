@@ -20,7 +20,7 @@ function cityname(b)
                 
 
                 if (response.cod==400){
-                    display_string = display_string.concat('<br><div class="container" style="display: flex;align-items: center;flex-direction: column;"> <div class="card" style="width: 370px;height: 200px;display: flex; margin: 30px 30px;border: 6px solid black;padding: 40px 40px;border-radius: 20px;"><div class="card-body"><b><p class="text-danger">City not entered</p></b> </div></div></div></br>');
+                    display_string = display_string.concat('<br><div class="container" style="display: flex;align-items: center;flex-direction: column;"> <div class="card" style="width: 430px;height: 220px;display: flex; margin: 30px 30px;border: 6px solid black;padding: 40px 40px;border-radius: 20px;"><div class="card-body"><b><p class="text-danger">City not entered</p></b> </div></div></div></br>');
 
                     document.getElementById("temp1").innerHTML=display_string;
 
@@ -64,7 +64,7 @@ if(response.weather[0].main=="Fog"){
                     console.log(png_url)
                     img_tag ="<img src='"+png_url+"'" +"  width=80px "+ 'style="float:left;"' +">"
                     console.log(img_tag)
-                    display_string = display_string.concat('<br><div class="container" style="display: flex;justify-content:center;align-items: center;flex-direction: column;" > <div class="card" style="width: 370px;height: 200px;display: flex; margin: 30px 30px;border: 6px solid black;padding: 40px 40px;border-radius: 20px;"><div class="card-body" >').concat(img_tag).concat(' <b>City Name: </b> ').concat(response.name).concat('<br/> <b>Temp: </b>').concat((response.main.temp-273.15).toFixed(2)).concat("°C").concat('<br/><b> Description: </b>').concat(response.weather[0].description).concat('</div></div>,</div></br>');
+                    display_string = display_string.concat('<br><div class="container" style="display: flex;justify-content:center;align-items: center;flex-direction: column;" > <div class="card" style="width: 430px;height: 220px;display: flex; margin: 30px 30px;border: 6px solid black;padding: 40px 40px;border-radius: 20px;"><div class="card-body" >').concat(img_tag).concat(' <b>City Name: </b> ').concat(response.name).concat('<br/> <b>Temp: </b>').concat((response.main.temp-273.15).toFixed(2)).concat("°C").concat('<br/><b> Description: </b>').concat(response.weather[0].description).concat('</div></div>,</div></br>');
                     console.log(display_string);
                     document.getElementById("temp1").innerHTML=display_string;
 
